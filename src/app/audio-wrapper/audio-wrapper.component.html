@@ -1,0 +1,33 @@
+<button (click)="doPlay()">
+  player
+</button>
+
+<button (click)="doStop()">
+  stop
+</button>
+
+<!-- <button (click)="checkStatus()">
+  check
+</button> -->
+
+<button (click)="circlePlay()">
+  circle play
+</button>
+
+<div class="slider" *ngIf="showSlider">
+  <span>
+    {{totalstartTime}}
+  </span>
+  <span>
+    {{totalendTime}}
+  </span>
+</div>
+
+
+
+
+<div>
+  {{showedPlayedTime}}
+</div>
+
+<canvas #mycanvas></canvas>
